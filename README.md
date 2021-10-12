@@ -1,8 +1,8 @@
-##Elevator System
+# Elevator System
 This project is a simple simulation. Program allows user to control elevator system. 
 If you want to run program all you need is run Test class.
 
-##Panel
+## Panel
 
 1. Pickup - add given floor to elevator queue
 2. Update - add passengers on given floor
@@ -11,5 +11,5 @@ If you want to run program all you need is run Test class.
 5. Building status - show information about building
 6. End simulation - shutdown simulation
 
-##Technology
+## Technology
 The program uses java multithreading.
