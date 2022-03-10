@@ -38,7 +38,7 @@ public class ElevatorSim {
         for (int i = 0; i < numElevators; i++) {
             threads[i].start();
         }
-        int choose = 0;
+        int choose;
         while (Clock.getTime() <= time && !Thread.interrupted()) {
             System.out.println("1. Pickup");
             System.out.println("2. update");

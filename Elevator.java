@@ -31,7 +31,8 @@ public class Elevator implements Runnable {
                 if (moveQue.get(0).getArrTime() == Clock.getTime()) {
                     positionFloor = moveQue.get(0).getDesti();
                     if (requests[positionFloor] > 0) {
-                        System.out.println("Time: " + Clock.getTime() + " Elevator: " + ID + " unloaded: " + requests[positionFloor] + " passengers at floor: " + positionFloor);
+                        System.out.println("Time: " + Clock.getTime() + " Elevator: " + ID + " unloaded: "
+                                + requests[positionFloor] + " passengers at floor: " + positionFloor);
                         unloadPassengers(requests[positionFloor]);
                         moveQue.remove(0);
                     } else {
@@ -112,7 +113,8 @@ public class Elevator implements Runnable {
     }
 
     public void status() {
-        System.out.println("ID: " + getID() + " actual floor: " + getPositionFloor() + " destination floor: " + getTarget() + " number of passengers inside " + getNumPassengers());
+        System.out.println("ID: " + getID() + " actual floor: " + getPositionFloor() + " destination floor: " +
+                getTarget() + " number of passengers inside " + getNumPassengers());
     }
 
     public void setID(int ID) {
